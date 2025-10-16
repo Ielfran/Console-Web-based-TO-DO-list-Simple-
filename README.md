@@ -1,59 +1,64 @@
-Task Tracker CLI
-A simple command-line interface (CLI) tool for managing tasks. Organize your tasks into three categories: To-Do, In Progress, and Done. Tasks are stored in a tasks.json file in your current working directory.
-Features
+# Task Tracker CLI ✨
 
-Add tasks to the To-Do list
-List all tasks across To-Do, In Progress, and Done categories
-Move tasks from To-Do to In Progress
-Mark tasks as Done from In Progress
-Clear completed tasks or reset all tasks
-Color-coded output for better readability
+![Node.js](https://img.shields.io/badge/Node.js-v16+-green?logo=node.js)
+![License](https://img.shields.io/badge/License-MIT-blue)
+![Version](https://img.shields.io/badge/Version-1.0.0-brightgreen)
 
-Installation
+A sleek and simple command-line interface (CLI) tool for managing your tasks. Organize your workflow into **To-Do**, **In Progress**, and **Done** categories, with tasks saved in a `tasks.json` file in your current directory. 🚀
 
-Ensure you have Node.js installed.
-Clone or download this repository.
-Navigate to the project directory and run:npm install
+---
 
+## 🌟 Features
 
-Run the CLI using node index.js from the project directory.
+- 📝 Add tasks to your To-Do list
+- 📋 View all tasks across To-Do, In Progress, and Done
+- 🚀 Move tasks from To-Do to In Progress
+- ✅ Mark tasks as Done
+- 🧹 Clear completed tasks or reset everything
+- 🎨 Color-coded console output for clarity
 
-Usage
-Run commands using node index.js in the project directory. The tasks are saved in a tasks.json file in the current directory.
-Commands
+---
 
-Add a task:
-node index.js add "Write project proposal"
+## 🛠️ Installation
 
-Adds a task to the To-Do list.
+1. Ensure you have [Node.js](https://nodejs.org/) (v16 or higher) installed.
+2. Clone or download this repository:
+   ```bash
+   git clone <repository-url>
+   ```
+3. Navigate to the project directory:
+   ```bash
+   cd task-tracker
+   ```
+4. Install dependencies:
+   ```bash
+   npm install
+   ```
+5. Run the CLI using:
+   ```bash
+   node index.js
+   ```
 
-List all tasks:
-node index.js list
+---
 
-Alias: node index.js lsDisplays all tasks in To-Do, In Progress, and Done lists.
+## 🚀 Usage
 
-Start a task:
-node index.js start 1
+Run commands with `node index.js` in the project directory. Tasks are stored in a `tasks.json` file created automatically in your current directory.
 
-Moves a task from To-Do to In Progress by its ID (shown in the list command).
+### 📚 Available Commands
 
-Mark a task as done:
-node index.js done 1
+| Command | Alias | Description |
+|---------|-------|-------------|
+| `node index.js add "<task>"` | - | Add a task to the To-Do list |
+| `node index.js list` | `ls` | List all tasks in all categories |
+| `node index.js start <id>` | - | Move a task from To-Do to In Progress |
+| `node index.js done <id>` | - | Move a task from In Progress to Done |
+| `node index.js clear` | - | Clear all tasks from the Done list |
+| `node index.js clear-all` | - | Reset all tasks in all lists |
 
-Moves a task from In Progress to Done by its ID.
+### Example Workflow
 
-Clear completed tasks:
-node index.js clear
-
-Removes all tasks from the Done list.
-
-Clear all tasks:
-node index.js clear-all
-
-Resets all tasks in all lists.
-
-
-Example
+```bash
 $ node index.js add "Finish CLI documentation"
 $ node index.js add "Test CLI commands"
 $ node index.js list
@@ -84,19 +89,31 @@ $ node index.js list
 
 -- Done --
  1. Finish CLI documentation
+```
 
-Dependencies
+---
 
-commander: For parsing command-line arguments
-chalk: For colorful console output
-Node.js built-in modules: fs, path
+## 📦 Dependencies
 
-Notes
+- **[commander](https://www.npmjs.com/package/commander)**: Parses command-line arguments
+- **[chalk](https://www.npmjs.com/package/chalk)**: Adds colorful console output
+- **Node.js built-in modules**: `fs`, `path`
 
-The tasks.json file is automatically created if it doesn't exist.
-Task IDs are based on the order shown in the list command (1-based indexing).
-Invalid task IDs will result in an error message.
-Use this tool in any directory where you want to manage tasks; a new tasks.json will be created there if needed.
+---
 
-License
-MIT License. See LICENSE for details.
+## ℹ️ Notes
+
+- A `tasks.json` file is created automatically if it doesn't exist.
+- Task IDs are 1-based, as shown in the `list` command.
+- Invalid task IDs will display an error message.
+- Use the tool in any directory; a new `tasks.json` will be created there.
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+*Built with 💻 and ☕ to keep your tasks organized!*
