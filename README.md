@@ -1,14 +1,10 @@
 # Task Tracker CLI ✨
 
-![Node.js](https://img.shields.io/badge/Node.js-v16+-green?logo=node.js)
-![License](https://img.shields.io/badge/License-MIT-blue)
-![Version](https://img.shields.io/badge/Version-1.0.0-brightgreen)
-
-A sleek and simple command-line interface (CLI) tool for managing your tasks. Organize your workflow into **To-Do**, **In Progress**, and **Done** categories, with tasks saved in a `tasks.json` file in your current directory. 🚀
+A super simple and simple command-line interface (CLI) tool for managing your tasks. Organize your workflow into **To-Do**, **In Progress**, and **Done** categories, with tasks saved in a `tasks.json` file in your current directory.
 
 ---
 
-## 🌟 Features
+##  Features
 
 - 📝 Add tasks to your To-Do list
 - 📋 View all tasks across To-Do, In Progress, and Done
@@ -90,30 +86,3 @@ $ node index.js list
 -- Done --
  1. Finish CLI documentation
 ```
-
----
-
-## 📦 Dependencies
-
-- **[commander](https://www.npmjs.com/package/commander)**: Parses command-line arguments
-- **[chalk](https://www.npmjs.com/package/chalk)**: Adds colorful console output
-- **Node.js built-in modules**: `fs`, `path`
-
----
-
-## ℹ️ Notes
-
-- A `tasks.json` file is created automatically if it doesn't exist.
-- Task IDs are 1-based, as shown in the `list` command.
-- Invalid task IDs will display an error message.
-- Use the tool in any directory; a new `tasks.json` will be created there.
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-*Built with 💻 and ☕ to keep your tasks organized!*
